@@ -4,6 +4,7 @@
   padding: 0;
   font-size: 16px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: border-box;
 }
 
 /**** Color variables ****/
@@ -37,14 +38,78 @@ h3 {
 h4 {
   color: var(--primary-blue);
   font-size: 1.2rem;
+  padding: 10px;
 }
 
 /**** Container *****/
-
+.container{
+  width: 100%;
+  padding: 20px;
+}
 /***** Header ******/
 
+div#header{
+  background-color: var(--secondary-red);
+  color: var(--basic-white)
+}
+
 /***** Navbar styles ****/
+nav {
+  width: 100%;
+  padding: 20px;
+  bottom: 0;
+  background-color: var(--basic-white);
+  position:sticky;
+  display: block;
+
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  padding-inline-start: 0;
+}
+
+nav ul li {
+  list-style-type: none;
+}
 
 /***** Card styles ****/
 
+.card{
+  background-color: var(--primary-orange);
+  padding: 20px 15px;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.card img{
+  width: 100%;
+}
+
+.card button{
+  background-color: var(--primary-blue);
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+  margin-top: 10px;
+}
+
+.card p {
+  padding: 10px;
+}
 /******* Search input *******/
+.search-input{
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid var(--primary-blue)
+
+}
+
+.search-input::placeholder{
+  color: var(--primary-blue)
+}
